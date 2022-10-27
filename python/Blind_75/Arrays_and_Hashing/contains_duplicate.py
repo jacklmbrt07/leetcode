@@ -1,5 +1,5 @@
 class Solution:
-    # def containsDuplicate(self, nums: List[int]) -> bool:
+    # def containsDuplicate(self, nums: list[int]) -> bool:
     #     nums.sort()
     #     for i in range(len(nums[:-1])):
     #         if nums[i] == nums[i+1]:
@@ -10,7 +10,7 @@ class Solution:
     # Time: O(n log n)
     # Space: O(1)
 
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         hashset = set()
 
         for n in nums:
