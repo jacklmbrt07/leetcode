@@ -1,12 +1,12 @@
 class Codec:
-    def encode(self, strs: List[str]) -> str:
+    def encode(self, strs: list[str]) -> str:
         res = ""
         for s in strs:
             res += str(len(s)) + "#" + s
         return res
         
 
-    def decode(self, s: str) -> List[str]:
+    def decode(self, s: str) -> list[str]:
         res = []
         i = 0
         while i < len(s):
