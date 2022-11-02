@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # Time: O(n) Space: O(1)
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
         curr = head
@@ -15,3 +16,19 @@ class Solution:
             curr = next_temp
 
         return prev
+
+    # Recursive Method Time:O(n) Space: O(n)
+    # def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    #     if not head:
+    #         return None
+        
+    #     newHead = head
+
+    #     if head.next:
+    #         self.reverseList(head.next)
+    #         head.next.next = head
+        
+    #     head.next = None
+
+    #     return newHead
+
